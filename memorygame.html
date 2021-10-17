@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Memory game</title>
+  <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+
+  <div class="header-container">
+    <!--fulscreen on off mode-->
+    <img id="fullscreen" class=" full-screen" src="fullscreen.png" alt="fullscreen">
+    <!--counted moves-->
+  <p class="countMove">MOVES : <span class="countedMoves">0</span></p>
+  <header class="header">MEMORY GAME</header>
+  </div>
+
+  <section class="memory-game">
+    <div class="memory-card" data-framework="red">
+      <img class="front-face" src="uchihaitachi.jpg" alt="red" />
+      <img class="back-face" src="backcard.jpg" alt="woodenshade" />
+    </div>
+    <div class="memory-card" data-framework="red">
+      <img class="front-face" src="uchihaitachi.jpg" alt="red" />
+      <img class="back-face" src="backcard.jpg" alt="woodenshade" />
+    </div>
+    <div class="memory-card" data-framework="green">
+      <img class="front-face" src="hatake.jpg" alt="green" />
+      <img class="back-face" src="backcard.jpg" alt="woodenshade" />
+    </div>
+    <div class="memory-card" data-framework="green">
+      <img class="front-face" src="hatake.jpg" alt="green" />
+      <img class="back-face" src="backcard.jpg" alt="woodenshade" />
+    </div>
+    <div class="memory-card" data-framework="indigo">
+      <img class="front-face" src="madarauchiha.jpg" alt="purple" />
+      <img class="back-face" src="backcard.jpg" alt="woodenshade" />
+    </div>
+    <div class="memory-card" data-framework="indigo">
+      <img class="front-face" src="madarauchiha.jpg" alt="purple" />
+      <img class="back-face" src="backcard.jpg" alt="woodenshade" />
+    </div>
+    <div class="memory-card" data-framework="orange">
+      <img class="front-face" src="uzumaki.jpg" alt="orange" />
+      <img class="back-face" src="backcard.jpg" alt="woodenshade" />
+    </div>
+    <div class="memory-card" data-framework="orange">
+      <img class="front-face" src="uzumaki.jpg" alt="orange" />
+      <img class="back-face" src="backcard.jpg" alt="woodenshade" />
+    </div>
+    <div class="memory-card" data-framework="blue">
+      <img class="front-face" src="nara.jpg" alt="blue" />
+      <img class="back-face" src="backcard.jpg" alt="woodenshade" />
+    </div>
+    <div class="memory-card" data-framework="blue">
+      <img class="front-face" src="nara.jpg" alt="blue" />
+      <img class="back-face" src="backcard.jpg" alt="woodenshade" />
+    </div>
+    <div class="memory-card" data-framework="yellow">
+      <img class="front-face" src="uhihaa.png" alt="yellow" />
+      <img class="back-face" src="backcard.jpg" alt="woodenshade" />
+    </div>
+    <div class="memory-card" data-framework="yellow">
+      <img class="front-face" src="uhihaa.png" alt="yellow" />
+      <img class="back-face" src="backcard.jpg" alt="woodenshade" />
+    </div>
+  </section>
+  <!--start button-->
+  <div class="hide-background">
+  <button type="button" onclick="startGame(this)" class="start-restart" id="start-game">START</button>
+  </div>
+
+  <!--restart button-->
+  <button type="button" onclick="restartGame(this)" class="start-restart" id="restart-game">NEXT LEVEL</button>
+
+  <script src="memorygame.js"></script>  
+</body>
+</html>
