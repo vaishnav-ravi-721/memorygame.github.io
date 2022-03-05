@@ -103,7 +103,7 @@ function startGame(element){
     element.style.display = "none";
     myMusic.loop = true;
     myMusic.volume = 0.5;
-    backgroundMusic.play();
+    myMusic.play();
     
 }
 
