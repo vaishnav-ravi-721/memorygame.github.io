@@ -17,7 +17,7 @@ let record_moves = document.querySelector(".record");
 let recorded_moves;
 
 //background music
-let backgroundMusic = new Audio("narutorais.mp3");
+let backgroundMusic = new Audio("itomori.mp3");
 let start_game = document.querySelector("#start-game");
 
 let flip_card =  new Audio("move.mp3");
@@ -101,6 +101,8 @@ function restartGame(){
 //Start Game
 function startGame(element){
     element.style.display = "none";
+    myMusic.loop = true;
+    myMusic.volume = 0.5;
     backgroundMusic.play();
     
 }
