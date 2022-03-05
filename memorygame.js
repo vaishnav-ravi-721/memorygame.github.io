@@ -17,7 +17,7 @@ let record_moves = document.querySelector(".record");
 let recorded_moves;
 
 //background music
-let backgroundMusic = new Audio("itomori.mp3");
+let myMusic = new Audio("itomori.mp3");
 let start_game = document.querySelector("#start-game");
 
 let flip_card =  new Audio("move.mp3");
