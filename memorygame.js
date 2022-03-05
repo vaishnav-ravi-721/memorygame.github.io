@@ -105,6 +105,11 @@ function startGame(element){
     
 }
 
+//play pause music
+function musicPlayPause(){
+  return myMusic.paused ? myMusic.play() : myMusic.pause();
+}
+
 //count-moves
 function countMoves(){
     console.log("counting moves");
